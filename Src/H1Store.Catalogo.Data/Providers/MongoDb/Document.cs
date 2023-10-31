@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace H1Store.Catalogo.Data.Providers.MongoDb
 {
-	public abstract class Document  : IDocument
-	{ 
-		
-		public ObjectId Id { get; set; }
+    public abstract class Document : IDocument
+    {
 
-		public DateTime CreatedAt => Id.CreationTime;
-	}
+        public ObjectId Id { get; set; }
+
+        public DateTime CreatedAt => Id.CreationTime;
+    }
 }

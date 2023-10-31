@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "H1Store.Catalogo.Data", "Sr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "H1Store.Catalogo.Application", "Src\H1Store.Catalogo.Application\H1Store.Catalogo.Application.csproj", "{6C020F23-60F0-48C7-B209-93577F4955CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H1Store.Catalogo.API", "Src\H1Store.Catalogo.API\H1Store.Catalogo.API.csproj", "{D14B01DE-3B63-458F-A030-2E31DD42DCC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "H1Store.Catalogo.API", "Src\H1Store.Catalogo.API\H1Store.Catalogo.API.csproj", "{D14B01DE-3B63-458F-A030-2E31DD42DCC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

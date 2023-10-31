@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using H1Store.Catalogo.Application.ViewModels;
+using H1Store.Catalogo.Data.Providers.MongoDb.Collections;
 using H1Store.Catalogo.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,11 +9,18 @@ using System.Threading.Tasks;
 
 namespace H1Store.Catalogo.Application.AutoMapper
 {
-    public class DomainToApplication : Profile
+    public class DomainToCollection : Profile
     {
-        public DomainToApplication()
+        public DomainToCollection()
+
         {
-            CreateMap<Produto, ProdutoViewModel>();
+
+
+
+            CreateMap<Produto, ProdutoCollection>();
+
         }
+
+
     }
 }
