@@ -105,15 +105,16 @@ namespace H1Store.Catalogo.Application.Services
             await _produtoRepository.Atualizar(produto);
         }
 
-        public IEnumerable<ProdutoViewModel> ObterTodos()
-        {
-            var produtos = _produtoRepository.ObterTodos();
-            return _mapper.Map<IEnumerable<ProdutoViewModel>>(produtos);
-        }
+        //public IEnumerable<ProdutoViewModel> ObterTodos()
+        //{
+        //    var produtos = _produtoRepository.ObterTodos();
+        //    return _mapper.Map<IEnumerable<ProdutoViewModel>>(produtos);
+        //}
 
-        Task<IEnumerable<ProdutoViewModel>> IProdutoService.ObterTodos()
+        public async Task<IEnumerable<ProdutoViewModel>> ObterTodos()
         {
-            throw new NotImplementedException();
+            var produtos =  _produtoRepository.ObterTodos();
+            return _mapper.Map<IEnumerable<ProdutoViewModel>>(produtos);
         }
     }
 }
